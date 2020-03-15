@@ -1,161 +1,120 @@
 * {
     padding: 0;
     margin: 0;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-header {
-    background: url('asset/bg.jpg') no-repeat;
-    background-blend-mode: multiply;
-    opacity: .9;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+body{
+    height: 100%;
+    background-color: indianred;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 50;
+    margin: 1rem 0 3rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.styling{
+    font-weight: 800;
+    color: rgb(230, 179, 38);
+}
+
+.input_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-header .wrapper-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.input_div .input{
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    width: 450px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 25px;
 }
 
-header .wrapper-center h1 {
-    color: indianred;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    text-shadow: 0 4px 0px black;
-    margin-bottom: 40px;
-}
-
-header .wrapper-center img{
-    border-radius: 50%;
-    border: 7px solid indianred;
-    box-shadow: 0 26px 0px rgba(0,0,0,.7);
-    width: 60%;
-    transition: transform .5s ease-out;
+.addButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: #fff;
+    margin: 0.25rem;
+    background-color: rgb(230, 179, 38);
     cursor: pointer;
 }
 
-header .wrapper-center img:hover{
-    transform: scale(1.1);
+
+.addButton:hover{
+    opacity: 0.7;
 }
 
-header .wrapper-center ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+.container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 25px;
-
-}
-
-header .wrapper-center ul li a {
-    margin-right: 30px;
-    text-decoration: none;
-    color: indianred;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    text-shadow: 0 4px 0px black;
-    margin-bottom: 40px;
-    padding-bottom: 10px;
-}
-
-header .wrapper-center ul li a:hover {
-    border-bottom: 5px solid indianred;
-}
-
-.about-me {
-    background: lightcoral;
-    color: bisque;
-    text-align: center;
-    padding: 15px 10px;
-    height: 100vh;
-    line-height: 100%;
-    display: flex;
     align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.item{
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 4px solid #fff;
+}
+
+.item_input{
+    background: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    width: 350px;
+    font-size: 1.4rem;
+}
+
+
+.editButton{
+    font-size: 1.4rem;
+    margin: 0 0.5;
+    font-family:'Shadows Into Light', cursive;
+    background: none;
+    outline: none;
+    color: rgb(230, 179, 38) ;
+    border: none;
+    cursor: pointer;
+}
+
+.doneButton{
+    font-size: 1.4rem;
+    margin: 0 0.5;
+    font-family:'Shadows Into Light', cursive;
+    background: none;
+    outline: none;
+    color: green ;
+    border: none;
+    cursor: pointer;
+}
     
-}
-
-.about-me .wrapper h2 {
-    text-shadow: 0 4px 0px black;
-    font-size: 2,5rem;
-    text-transform: uppercase;
-    border-bottom: 7px solid white;
-    display: inline-block;
-    padding-bottom: 7px;
-    margin-bottom: 40px;
-   
-}
-
-.about-me .wrapper p {
-   
-    font-size: 20px;
-    line-height: 25px;
-    padding: 35px 35px;
-    
-}
-
-.RO {
-    background: rgb(207, 128, 128);
-    color: bisque;
-    text-align: center;
-    padding: 15px 10px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 100%;
-}
-
-.RO .wrapper h2{
-    text-shadow: 0 4px 0px black;
-    font-size: 2,5rem;
-    text-transform: uppercase;
-    border-bottom: 7px solid white;
-    display: inline-block;
-    padding-bottom: 7px;
-    margin-bottom: 40px;
-}
-
-.RO .wrapper p {
-    font-size: 20px;
-    line-height: 25px;
-    padding: 35px 35px;
-}
-
-.KONTAK {
-    background: indianred;
-    color: bisque;
-    text-align: center;
-    padding: 15px 10px;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 100%;
-}
-
-.KONTAK .wrapper h2{
-    text-shadow: 0 4px 0px black;
-    font-size: 2,5rem;
-    text-transform: uppercase;
-    border-bottom: 7px solid white;
-    display: inline-block;
-    padding-bottom: 7px;
-    margin-bottom: 40px;
-}
-
-.KONTAK .wrapper p {
-    font-size: 20px;
-    line-height: 25px;
-    padding: 35px 35px;
+.removeButton{
+    font-size: 1.4rem;
+    font-family:'Shadows Into Light', cursive;
+    background: none;
+    outline: none;
+    color:red;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
